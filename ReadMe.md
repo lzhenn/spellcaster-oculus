@@ -1,7 +1,7 @@
 ## spellcaster-oculus
 
 **Spellcaster! Oculus** is a monthly scale anomaly prediction experiment focusing on temperature and precipitation. 
-It used LASSO (L1 Regularization) to extract features from large amounts of circulation indicators and implement Random Forest to predict anomalies in each station in China.
+It used LASSO (L1 Regularization) to extract features from large amounts of circulation indicators and implement Random Forest to predict anomalies in 2000+ weather stations in China.
 
 It is only an experimental project and provides no warranty.
 
