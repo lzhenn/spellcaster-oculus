@@ -5,6 +5,27 @@ It used LASSO (L1 Regularization) to extract features from large amounts of circ
 
 It is only an experimental project and provides no warranty.
 
+![](https://raw.githubusercontent.com/Novarizark/spellcaster-oculus/main/db/oculus.jpg)
 **Spellcaster! Oculus (2021)** is the updated and refined version of **[Spellcaster-local (2019-20)](https://github.com/Novarizark/spellcaster-local)**. Also, _[The Oculus](http://classic.battle.net/diablo2exp/items/normal/usorceress.shtml)_ comes from the unique item specifically for Sorceress in DiabloII.
 
+### File Structure
+
+#### conf
+
+* `config.ini`: config file controlling the whole run.
+
+#### db
+static data archive, including station meta, historical obvs.
+
+#### feature_warehouse
+potential features after ETL
+
+#### lib
+source code lib for model components
+
+#### preload
+external shell scripts that control the update of dynamic data (potential features)
+
+#### raw_feature
+dynamic data (potential features) before ETL 
 
