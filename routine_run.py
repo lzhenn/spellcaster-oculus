@@ -62,9 +62,11 @@ def main_run():
 
     if cfg_hdl['CORE'].getboolean('build_ts_model'):
         etl_mgr.load_giss()
+        sum_short=0
         for sta in etl_mgr.sta_lst:
             (X,Y)=lib.etl_manager.gen_one_staXY_ts(etl_mgr,str(sta.sta_num))
-
+            sum_short=sum_short+Y
+        print(sum_short)
     time_mgr.dump()
     utils.write_log('*************************SPELLCASTER-OCULUS**************************')
 
