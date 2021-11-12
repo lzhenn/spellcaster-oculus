@@ -16,7 +16,7 @@ conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ### Structure
 
 * `./feature_lib/`: Potential features (X matrix) for build model
-* `./label/`: Predicted labels (Y maxtrix) for build model
+* `./label/`: Predicted labels (Y matrix) for build model
 * `./db/`: Archived model and evaluation dictionary
 * `./inferX/`: X matrix for inference 
 * `./output/`: Archived predictions 
@@ -42,8 +42,17 @@ Check `./output/` for results.
 
 `batch_build.py` will get a list of all files in `./feature_lib` and `./label`, and loop them together.
 In each loop, the files from `./feature_lib` and `./label` will be treated as an X-Y pair. 
-The config file will be modify accordingly and then call `build_model.py`.
+The config file will be modified accordingly and then call `build_model.py`.
+
+**Plese first modify `./conf/config.sample.ini`**, then execute:
 
 ```
 python batch_build.py
 ```
+
+Similarly, use `batch_infer.py` for batch inference.
+
+```
+python batch_infer.py
+```
+
